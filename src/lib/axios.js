@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useAuthStore } from '../store/authStore.js';
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5001/api',
+  baseURL: import.meta.env.VITE_API_URL || 'https://startab-becand1-1.onrender.com/api',
 });
 
 // Har bir so'rovga avtomatik ravishda JWT token qo'shiladi
