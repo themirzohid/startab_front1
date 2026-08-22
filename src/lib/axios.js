@@ -5,7 +5,7 @@ const api = axios.create({
   baseURL: import.meta.env.VITE_API_URL || 'https://startab-becand1-1.onrender.com/api',
 });
 
-// Har bir so'rovga avtomatik ravishda JWT token qo'shiladi
+// Har bir so'rovga avtomatik ravishda JW T token qo'shiladi
 api.interceptors.request.use((config) => {
   const token = useAuthStore.getState().token;
   if (token) {
